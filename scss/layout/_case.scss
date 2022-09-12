@@ -1,0 +1,11 @@
+.case {
+    width: 100%;
+    display: flex;
+    margin-top: 160px;
+}
+.case-left,
+.case-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}

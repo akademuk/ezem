@@ -1,0 +1,108 @@
+.tittle {
+    max-width: 1146px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.media-wrapper {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+.banner-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 44px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+  .media-wrapper::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 100vh;
+  }
+  .content {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+  }
+
+.tittle-top {
+    margin-bottom: 32px;
+    font-family: "Geometria";
+    font-size: 20px;
+    line-height: 140%;
+}
+.tittle-container {
+    padding-left: 165px;
+    margin-top: 100px;
+}
+.animation-container {
+    position: relative;
+    height: 50vh;
+    span {
+        position: absolute;
+        left: -150%;
+        &:nth-of-type(1) {
+            -webkit-animation: translate-title 2s linear;
+            -webkit-animation-fill-mode: forwards;
+            animation: translate-title 2s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        &:nth-of-type(2) {
+            -webkit-animation: translate-title 2s linear;
+            -webkit-animation-fill-mode: forwards;
+            animation: translate-title 2s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+            top: 100px;
+            b {
+                border: 2px solid #0045F8;
+                color: #0045F8;
+                padding: 5px 5px;
+                border-radius: 40px;
+                font-weight: 400;
+            }
+        }
+        &:nth-of-type(3) {
+            -webkit-animation: translate-title 2s linear;
+            -webkit-animation-fill-mode: forwards;
+            animation: translate-title 2s linear;
+            animation-fill-mode: forwards;
+            -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+            top: 200px;
+        }
+    }
+}
+.tittle-bottom {
+    font-family: "Geometria";
+    font-size: 20px;
+    line-height: 140%;
+    text-align: right;
+    margin-bottom: 160px;
+}
+@-webkit-keyframes translate-title {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes translate-title {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}

@@ -1,0 +1,24 @@
+$colorBlack21: #212121;
+$colorGreen: #70CD81;
+$backgroundBlue: #0045F8;
+$colorBlue: #6691FF;
+$colorWhite: #FFFFFF;
+$backgroundYellow: #FFC300;
+$border-radius: 40px;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-justify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

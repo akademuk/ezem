@@ -1,0 +1,52 @@
+.language{
+    font-family: "Geometria", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: $colorBlack21;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+.logo {
+    position: fixed;
+    top: 38px;
+    left: 22px;
+    z-index: 200;
+}
+.modal-link {
+    font-family: "Geometria";
+    line-height: 140%;
+    padding: 12px 24px;
+    border: 2px solid #212121;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #212121;
+    margin-left: 32px;
+}
+.animation-opacity {
+    opacity: 0;
+    -webkit-animation: navigation 5s linear;
+    -webkit-animation-fill-mode: forwards;
+    animation: navigation 5s linear;
+    animation-fill-mode: forwards;
+}
+.header-navigation {
+    position: relative;
+    padding-right: 40px;
+}
+@-webkit-keyframes navigation {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes navigation {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
